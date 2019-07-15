@@ -1,5 +1,5 @@
 {
-  "name": "metronic-angular",
+  "name": "inventory-management",
   "version": "6.0.4",
   "license": "MIT",
   "scripts": {
@@ -58,8 +58,9 @@
     "web-animations-js": "^2.3.1",
     "zone.js": "~0.9.1"
   },
-  "devDependencies": {
+  "devDependencies": {    
     "@angular-devkit/build-angular": "^0.800.3",
+    "@angular/cli": "^8.0.3",
     "@angular/compiler-cli": "^8.0.2",
     "@angular/language-service": "^8.0.2",
     "@angular/material": "^8.0.1",
