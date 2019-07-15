@@ -93,6 +93,13 @@ import { SalesOrdersEditComponent } from './sales-orders/sales-orders-edit/sales
 import { SerialNumberListComponent } from './serial-number/serial-number-list/serial-number-list.component';
 import { SerialNumberEditComponent } from './serial-number/serial-number-edit/serial-number-edit.component';
 
+//Barcode Scaning
+import { BarcodeScaningListComponent } from './barcode-scaning/barcode-scaning-list/barcode-scaning-list.component';
+import { BarcodeScaningEditComponent } from './barcode-scaning/barcode-scaning-edit/barcode-scaning-edit.component';
+
+// Customers
+import { CustomersListComponent } from './customers/customers-list/customers-list.component';
+import { CustomerEditDialogComponent } from './customers/customer-edit/customer-edit.dialog.component';
 const routes: Routes = [
   {
     path: '',
@@ -105,6 +112,10 @@ const routes: Routes = [
         redirectTo: 'products',
         pathMatch: 'full'
       },
+      {
+				path: 'suppliers',
+				component: CustomersListComponent
+			},
       {
         path: 'products',
         component: ProductsListComponent,
@@ -184,6 +195,22 @@ const routes: Routes = [
       {
         path: 'serial-number/edit/:id',
         component: SerialNumberEditComponent
+      },
+      {
+        path: 'barcode-scaning',
+        component: BarcodeScaningListComponent,
+      },
+      {
+        path: 'barcode-scaning/add',
+        component: BarcodeScaningEditComponent
+      },
+      {
+        path: 'barcode-scaning/edit',
+        component: BarcodeScaningEditComponent
+      },
+      {
+        path: 'barcode-scaning/edit/:id',
+        component: BarcodeScaningEditComponent
       }
     ]
   }
@@ -265,10 +292,13 @@ const routes: Routes = [
     DeleteEntityDialogComponent,
     FetchEntityDialogComponent,
     UpdateStatusDialogComponent,
-    SpecificationEditDialogComponent
+    SpecificationEditDialogComponent,
+    CustomerEditDialogComponent,
   ],
   declarations: [
     StoreManagementComponent,
+    CustomersListComponent,
+    CustomerEditDialogComponent,  
     // Products
     ProductsListComponent,
     ProductEditComponent,
@@ -280,6 +310,8 @@ const routes: Routes = [
     SalesOrdersEditComponent,
     SerialNumberListComponent,
     SerialNumberEditComponent,
+    BarcodeScaningListComponent,
+    BarcodeScaningEditComponent,
     RemarksListComponent,
     SpecificationsListComponent,
     SpecificationEditDialogComponent

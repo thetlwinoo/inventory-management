@@ -3,6 +3,7 @@ import { CarsTable } from './cars.table';
 import { RemarksTable } from './remarks.table';
 import { CarSpecificationsTable } from './car-specifications.table';
 import { OrdersTable } from './orders.table';
+import { InvoicesTable } from './invoices.table';
 
 // Wrapper class
 export class ECommerceDataContext {
@@ -20,4 +21,6 @@ export class ECommerceDataContext {
 
 
 	public static orders = OrdersTable.orders;
+
+	public static invoices = InvoicesTable.invoices;
 }

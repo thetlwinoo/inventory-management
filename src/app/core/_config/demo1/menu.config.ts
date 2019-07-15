@@ -114,6 +114,35 @@ export class MenuConfig {
 					icon: 'flaticon2-browser-2',
 					page: 'store-management/sales-orders'					
 				},
+				{section: 'Supplier Management'},
+				{
+					title: 'Suppliers',
+					root: true,
+					bullet: 'dot',
+					icon: 'flaticon2-browser-2',
+					page: 'store-management/suppliers'					
+				},
+				{section: 'Reporting'},
+				{
+					title: 'Generate Reports',
+					root: true,
+					bullet: 'dot',
+					icon: 'flaticon2-user-outline-symbol',
+					submenu: [
+						{
+							title: 'Products Report',
+							page: 'reports/products-report'
+						},
+						{
+							title: 'Orders Report',
+							page: 'reports/orders-report'
+						},
+						{
+							title: 'Suppliers Report',
+							page: 'reports/suppliers-report'
+						},
+					]
+				},	
 				{section: 'Configurations'},
 				{
 					title: 'Serial Numbers',
@@ -122,6 +151,14 @@ export class MenuConfig {
 					root: true,
 					permission: 'accessToECommerceModule',
 					page: 'store-management/serial-number'				
+				},	
+				{
+					title: 'Barcode and Scaning',
+					bullet: 'dot',
+					icon: 'flaticon2-list-2',
+					root: true,
+					permission: 'accessToECommerceModule',
+					page: 'store-management/barcode-scaning'				
 				},			
 				{section: 'Settings'},
 				{

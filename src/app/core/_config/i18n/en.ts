@@ -78,28 +78,28 @@ export const locale = {
 			},
 			ECOMMERCE: 'eCommerce',
 			CUSTOMERS: {
-				CUSTOMERS: 'Customers',
-				CUSTOMERS_LIST: 'Customers list',
-				NEW_CUSTOMER: 'New Customer',
+				CUSTOMERS: 'Suppliers',
+				CUSTOMERS_LIST: 'Suppliers list',
+				NEW_CUSTOMER: 'New Supplier',
 				DELETE_CUSTOMER_SIMPLE: {
-					TITLE: 'Customer Delete',
-					DESCRIPTION: 'Are you sure to permanently delete this customer?',
-					WAIT_DESCRIPTION: 'Customer is deleting...',
-					MESSAGE: 'Customer has been deleted'
+					TITLE: 'Supplier Delete',
+					DESCRIPTION: 'Are you sure to permanently delete this supplier?',
+					WAIT_DESCRIPTION: 'Supplier is deleting...',
+					MESSAGE: 'Supplier has been deleted'
 				},
 				DELETE_CUSTOMER_MULTY: {
-					TITLE: 'Customers Delete',
-					DESCRIPTION: 'Are you sure to permanently delete selected customers?',
-					WAIT_DESCRIPTION: 'Customers are deleting...',
-					MESSAGE: 'Selected customers have been deleted'
+					TITLE: 'Suppliers Delete',
+					DESCRIPTION: 'Are you sure to permanently delete selected suppliers?',
+					WAIT_DESCRIPTION: 'Suppliers are deleting...',
+					MESSAGE: 'Selected suppliers have been deleted'
 				},
 				UPDATE_STATUS: {
-					TITLE: 'Status has been updated for selected customers',
-					MESSAGE: 'Selected customers status have successfully been updated'
+					TITLE: 'Status has been updated for selected suppliers',
+					MESSAGE: 'Selected suppliers status have successfully been updated'
 				},
 				EDIT: {
-					UPDATE_MESSAGE: 'Customer has been updated',
-					ADD_MESSAGE: 'Customer has been created'
+					UPDATE_MESSAGE: 'Supplier has been updated',
+					ADD_MESSAGE: 'Supplier has been created'
 				}
 			}
 		}

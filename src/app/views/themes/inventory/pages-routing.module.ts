@@ -22,6 +22,10 @@ const routes: Routes = [
 				loadChildren: () => import('app/views/pages/apps/store-management/store-management.module').then(m => m.StoreManagementModule),
 			},
 			{
+				path: 'reports',
+				loadChildren: () => import('app/views/pages/apps/reporting/reporting.module').then(m => m.ReportingModule),
+			},
+			{
 				path: 'user-management',
 				loadChildren: () => import('app/views/pages/user-management/user-management.module').then(m => m.UserManagementModule)
 			},
