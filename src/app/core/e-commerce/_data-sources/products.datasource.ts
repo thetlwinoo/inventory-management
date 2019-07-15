@@ -23,6 +23,7 @@ export class ProductsDataSource extends BaseDataSource {
 		this.store.pipe(
 			select(selectProductsInStore)
 		).subscribe((response: QueryResultsModel) => {
+			console.log('Query result',response)
 			this.paginatorTotalSubject.next(response.totalCount);
 			this.entitySubject.next(response.items);
 		});

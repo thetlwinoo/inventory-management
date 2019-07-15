@@ -59,7 +59,7 @@ export class SubheaderService {
 
 			if (objectPath.get(this.manualTitle, this.router.url)) {
 				this.setTitle(this.manualTitle[this.router.url]);
-			} else {
+			} else {				
 				// get updated page title on every route changed
 				this.title$.next(objectPath.get(this.pageConfig, 'page'));
 

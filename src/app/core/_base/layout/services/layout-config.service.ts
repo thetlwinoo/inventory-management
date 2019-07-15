@@ -87,7 +87,7 @@ export class LayoutConfigService {
 	/**
 	 * Get brand logo
 	 */
-	getLogo(): string {
+	getLogo(): string {		
 		const menuAsideLeftSkin = objectPath.get(this.layoutConfig, 'brand.self.skin');
 		// set brand logo
 		const logoObject = objectPath.get(this.layoutConfig, 'self.logo');
@@ -99,9 +99,11 @@ export class LayoutConfigService {
 		if (typeof logoObject === 'object') {
 			logo = objectPath.get(logoObject, menuAsideLeftSkin + '');
 		}
+		console.log('get logo',this.layoutConfig)
 		if (typeof logo === 'undefined') {
 			try {
 				const logos = objectPath.get(this.layoutConfig, 'self.logo');
+				console.log('logos',logos)
 				logo = logos[Object.keys(logos)[0]];
 			} catch (e) {
 			}

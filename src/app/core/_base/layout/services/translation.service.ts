@@ -23,10 +23,10 @@ export class TranslationService {
 	 */
 	constructor(private translate: TranslateService) {
 		// add new langIds to the list
-		this.translate.addLangs(['en']);
+		this.translate.addLangs(['mm']);
 
 		// this language will be used as a fallback when a translation isn't found in the current language
-		this.translate.setDefaultLang('en');
+		this.translate.setDefaultLang('mm');
 	}
 
 	/**
@@ -38,6 +38,7 @@ export class TranslationService {
 		const locales = [...args];
 
 		locales.forEach(locale => {
+			console.log('locale',locale)
 			// use setTranslation() with the third argument set to true
 			// to append translations instead of replacing them
 			this.translate.setTranslation(locale.lang, locale.data, true);

@@ -10,17 +10,17 @@ export class LayoutConfig {
 				'background-image': './assets/media/misc/bg-1.jpg',
 			},
 			'logo': {
-				'dark': './assets/media/logos/logo-light.png',
+				'dark': './assets/media/logos/mm-tech.png',
 				'light': './assets/media/logos/logo-dark.png',
-				'brand': './assets/media/logos/logo-light.png',
-				'green': './assets/media/logos/logo-light.png',
+				'brand': './assets/media/logos/mm-tech.png',
+				'green': './assets/media/logos/mm-tech.png',
 			}
 		},
 		// == Page Splash Screen loading
 		'loader': {
 			'enabled': true,
 			'type': 'spinner-logo',
-			'logo': './assets/media/logos/logo-mini-md.png',
+			'logo': './assets/media/logos/mm-logo.png',
 			'message': 'Please wait...'
 		},
 		// == Colors for javascript

@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PartialsModule } from '../partials/partials.module';
 // Pages
 import { CoreModule } from '../../core/core.module';
-
+import { UserManagementModule } from './user-management/user-management.module';
 @NgModule({
 	declarations: [],
 	exports: [],
@@ -17,6 +17,7 @@ import { CoreModule } from '../../core/core.module';
 		FormsModule,
 		CoreModule,
 		PartialsModule,
+		UserManagementModule,
 	],
 	providers: []
 })

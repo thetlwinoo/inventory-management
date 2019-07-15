@@ -46,7 +46,7 @@ export class Widget4Component implements OnInit {
 			this.data = shuffle([
 				{
 					pic: './assets/media/files/doc.svg',
-					title: 'Metronic Documentation',
+					title: 'Product Documentation',
 					url: 'https://keenthemes.com.my/metronic',
 				}, {
 					pic: './assets/media/files/jpg.svg',
@@ -54,15 +54,15 @@ export class Widget4Component implements OnInit {
 					url: 'https://keenthemes.com.my/metronic',
 				}, {
 					pic: './assets/media/files/pdf.svg',
-					title: 'Full Developer Manual For 4.7',
+					title: 'User Manual',
 					url: 'https://keenthemes.com.my/metronic',
 				}, {
 					pic: './assets/media/files/javascript.svg',
-					title: 'Make JS Great Again',
+					title: 'Finance Report 2019',
 					url: 'https://keenthemes.com.my/metronic',
 				}, {
 					pic: './assets/media/files/zip.svg',
-					title: 'Download Ziped version OF 5.0',
+					title: 'Download Product List',
 					url: 'https://keenthemes.com.my/metronic',
 				}, {
 					pic: './assets/media/files/pdf.svg',

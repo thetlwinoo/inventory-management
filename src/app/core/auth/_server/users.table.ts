@@ -8,11 +8,11 @@ export class UsersTable {
 			accessToken: 'access-token-8f3ae836da744329a6f93bf20594b5cc',
 			refreshToken: 'access-token-f8c137a2c98743f48b643e71161d90aa',
 			roles: [1], // Administrator
-			pic: './assets/media/users/300_25.jpg',
-			fullname: 'Sean',
+			pic: './assets/media/users/default.jpg',
+			fullname: 'SystemAdmin',
 			occupation: 'CEO',
-			companyName: 'Keenthemes',
-			phone: '456669067890',
+			companyName: 'MM-TECH',
+			phone: '09123456789',
 			address: {
 				addressLine: 'L-12-20 Vertex, Cybersquare',
 				city: 'San Francisco',

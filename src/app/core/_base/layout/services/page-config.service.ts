@@ -28,12 +28,12 @@ export class PageConfigService {
 	 * Get current page config based on route
 	 */
 	getCurrentPageConfig(path?: string): any {
+		
 		let configPath = this.cleanUrl(this.router.url);
 
 		if (path) {
 			configPath += '.' + path;
 		}
-
 		// get page config by path
 		return objectPath.get(this.pageConfig, configPath);
 	}
@@ -70,7 +70,7 @@ export class PageConfigService {
 	 */
 	cleanUrl(url: string): string {
 		// remove first route (demo name) from url router
-		if (new RegExp(/^\/demo/).test(url)) {
+		if (new RegExp(/^\/inventory/).test(url)) {
 			const urls = url.split('/');
 			urls.splice(0, 2);
 			url = urls.join('/');

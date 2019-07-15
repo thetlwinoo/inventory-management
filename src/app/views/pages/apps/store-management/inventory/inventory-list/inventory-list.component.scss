@@ -1,0 +1,10 @@
+:host {
+    .mat-column-status,
+    .mat-column-condition,
+    .mat-column-manufacture {
+        max-width: 124px;
+    }
+    .mat-column-actions {
+        max-width: 64px;
+    }
+}

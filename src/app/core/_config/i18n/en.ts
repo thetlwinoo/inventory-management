@@ -13,6 +13,8 @@ export const locale = {
 			FEATURES: 'Features',
 			APPS: 'Apps',
 			DASHBOARD: 'Dashboard',
+			PRODUCTS: 'Products',
+			INVENTORY: 'Inventory'
 		},
 		AUTH: {
 			GENERAL: {

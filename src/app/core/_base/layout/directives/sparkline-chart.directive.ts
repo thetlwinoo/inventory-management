@@ -46,7 +46,9 @@ export class SparklineChartDirective implements AfterViewInit {
 	 * After view init
 	 */
 	ngAfterViewInit(): void {
-		this.initChart(this.el.nativeElement, this.options.data, this.options.color, this.options.border, this.options.fill, this.options.tooltip);
+		if(this.options){
+			this.initChart(this.el.nativeElement, this.options.data, this.options.color, this.options.border, this.options.fill, this.options.tooltip);
+		}		
 	}
 
 	/**

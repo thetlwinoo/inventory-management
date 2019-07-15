@@ -144,7 +144,8 @@ export class LoginComponent implements OnInit, OnDestroy {
 			.pipe(
 				tap(user => {
 					if (user) {
-						this.store.dispatch(new Login({authToken: user.accessToken}));
+						console.log(this.returnUrl)
+						this.store.dispatch(new Login({ authToken: user.accessToken }));
 						this.router.navigateByUrl(this.returnUrl); // Main page
 					} else {
 						this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.INVALID_LOGIN'), 'danger');

@@ -32,12 +32,12 @@ export class Widget1Component implements OnInit {
 				{
 					title: 'Member Profit',
 					desc: 'Awerage Weekly Profit',
-					value: '+$17,800',
+					value: '+MMK 17,800',
 					valueClass: 'kt-font-brand'
 				}, {
 					title: 'Orders',
 					desc: 'Weekly Customer Orders',
-					value: '+$1,800',
+					value: '+MMK 1,800',
 					valueClass: 'kt-font-danger'
 				}, {
 					title: 'Issue Reports',

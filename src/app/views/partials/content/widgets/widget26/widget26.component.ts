@@ -16,6 +16,7 @@ export class Widget26Component implements OnInit {
 	}
 
 	ngOnInit() {
+		
 	}
 
 }
